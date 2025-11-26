@@ -6,7 +6,7 @@ A comprehensive digital menu management system for restaurants, enabling efficie
 
 This project is a full-stack digital menu management platform built to satisfy all functional requirements for restaurant menu management and customer access.
 
-**Live Deployed Application**: https://git .vercel.app
+**Live Deployed Application**: https://qr-digital-menu-system.vercel.app/
 
 ---
 
@@ -490,8 +490,8 @@ npm install
 Create `.env.local`:
 ```env
 DATABASE_URL="postgresql://user:password@host/dbname"
-AUTH_EMAIL="your-email@gmail.com"
-AUTH_PASSWORD="xxxx xxxx xxxx xxxx"  # Gmail App Password
+AUTHENTICATION_EMAIL="your-email@gmail.com"
+AUTHENTICATION_PASSWORD="xxxx xxxx xxxx xxxx"  # Gmail App Password
 NEXT_PUBLIC_APP_URL="http://localhost:3000"
 ```
 
@@ -499,6 +499,8 @@ NEXT_PUBLIC_APP_URL="http://localhost:3000"
 ```bash
 npx prisma generate
 npx prisma migrate deploy
+npx prisma migrate dev --name init
+npx prisma migrate reset --force
 ```
 
 **5. Run Development Server**
@@ -656,7 +658,7 @@ qr-digital-menu-system/
 ## 📞 Support
 
 - **Repository**: git clone https://github.com/chandraprakash9589/qr-digital-menu-system
-- **Visit**: https://qr-digital-menu-system.vercel.app
+- **Visit**: https://qr-digital-menu-system.vercel.app/
 
 ---
 
